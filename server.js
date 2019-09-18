@@ -4,7 +4,7 @@ const server = require('http').createServer(app);
 app.set('port', process.env.PORT || 3000);
 const io = require(__dirname + '/socketio_custom_setup.js');
 app.get("/", (req, res) => {
-  res.send("Welcome to the Hephaestus Server. Version 0.0.1");
+  res.send("Welcome to the Hephaestus Server. Version 0.0.2");
 });
 server.listen(app.get('port'), function() {
   console.log(`listening on ${app.get('port')}`);
