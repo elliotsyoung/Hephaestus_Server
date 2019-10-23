@@ -6,7 +6,7 @@ const io = require(__dirname + '/socketio_custom_setup.js');
 app.get("/", (req, res) => {
   res.send(`Welcome to the Hephaestus Server. Version 0.0.3
 
-  Testing, Hello Justin
+  Testing, Hello Justin, Hey Elliot!
   `);
 });
 server.listen(app.get('port'), function() {
