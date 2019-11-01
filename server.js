@@ -4,11 +4,8 @@ const server = require('http').createServer(app);
 app.set('port', process.env.PORT || 3000);
 const io = require(__dirname + '/socketio_custom_setup.js');
 
-app.use(express.static(__dirname + "/build/static"))
+app.use(express.static(__dirname + "/build"))
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + '/build/index.html');
-});
 server.listen(app.get('port'), function() {
   console.log(`listening on ${app.get('port')}`);
 });
